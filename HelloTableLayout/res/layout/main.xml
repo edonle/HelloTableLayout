@@ -1,12 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:stretchColumns="1">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Abrir..."
+            android:padding="3dip" />
+        <TextView
+            android:text="Ctrl-O"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
 
-</LinearLayout>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Salvar..."
+            android:padding="3dip" />
+        <TextView
+            android:text="Ctrl-S"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Salvar como..."
+            android:padding="3dip" />
+        <TextView
+            android:text="Ctrl-Shift-S"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:text="X"
+            android:padding="3dip" />
+        <TextView
+            android:text="Import..."
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="X"
+            android:padding="3dip" />
+        <TextView
+            android:text="Exportar..."
+            android:padding="3dip" />
+        <TextView
+            android:text="Ctrl-E"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sair"
+            android:padding="3dip" />
+    </TableRow>
+</TableLayout>
